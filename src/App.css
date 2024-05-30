@@ -9,8 +9,15 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 5rem;
+  width: 100vw;
   padding: 0 2rem;
+  background-color: #fbf9f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  border: 1px solid green;
 }
 .logo_count{
   display: flex;
@@ -55,11 +62,20 @@ body{
   height: inherit;
   border-radius: 50%;
 }
-
+/* Body */
+.body_count {
+  /* display: flex;
+  flex-direction: column; */
+  
+}
 /* SideBar  */
 .sidebar_count{
-  width: 12%;
+  width: 12vw;
   border: 1px solid;
+  background-color: #aaa3a3;
+  position: absolute;
+  left: 0;
+  top: 5rem;
 }
 .sidebar_count ul{
   width: 90%;
@@ -89,4 +105,104 @@ body{
   gap: 0.5rem;
   height: 3.5rem;
   width: 6rem;
+}
+.sidebarItemAlign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+/* Main */
+.main_count{
+  width: calc(100vw - 12vw);
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+}
+.recomnd_count{
+  width: 100%;
+  height: 6vh;
+  background-color: #fbf9f9;
+  /* background-color: goldenrod; */
+  display: flex;
+  gap: 1rem;
+  position: fixed;
+  top: 5rem; 
+  left: 12vw; 
+  z-index: 3;
+}
+.recomnd_count button{
+  height: 2rem;
+  min-width: 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #ecece4;
+  cursor: pointer;
+  outline: none;
+}
+.recomnd_count button:hover{
+  background-color: #cfc3c3;
+}
+/* Recommandation */
+/* .btn_count button{
+  width: auto;
+  height: 1.5rem;
+  background-color: #ccc7c7;
+  border: none;
+  position: fixed;
+  top: 5rem; */
+  /* left: 12vw; */
+/* } */
+
+/* Video container */
+.video_count{
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.videocard_count{
+  width: 15rem;
+  height: 310px;
+  border: 1px solid red;
+  
+}
+.videocard_count img{
+  width: 100%;
+}
+.videocard_count ul{
+  
+}
+.videocard_count ul li{
+  list-style: none;
+  color: black;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+.videocard_count .title{
+  font-size: large;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+.link{
+  text-decoration: none;
+}
+.watchpage_count{
+  border: 1px solid green;
+  width: 100%;
+  position: absolute;
+  right: 30vw;
+  z-index: -1;
+}
+iframe{
+  width: 100%;
+  height: 60vh;
 }

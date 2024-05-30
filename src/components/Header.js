@@ -17,7 +17,10 @@ const Header = () => {
                 <img className="logo" src="https://t3.ftcdn.net/jpg/04/03/98/64/360_F_403986499_hB7zfgOXezReA0sKkxl34RoT9TbNkbpH.jpg" />
             </div>
             <div className="search_count">
-                <input type="text" />
+                <input
+                 type="text"
+                 
+                 />
                 <button>Search</button>
             </div>
             <div className="profile_count">
